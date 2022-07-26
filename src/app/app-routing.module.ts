@@ -7,6 +7,7 @@ const routes: Routes = [
     path:'booking', component: BookingComponent
   },
   {
+    // ist eine Umleitung auf 'bokking' wenn Pfad leer ist
     path:'', redirectTo:'booking', pathMatch:'full'
   }
 ];
