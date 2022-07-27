@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header">
+        Feel free to book !
+    </div>
+    <div class="card-body">
+
+        <div class="row mb-2">
+            <div class="col">
+                <!-- ID -->
+                <label class="form-label">ID</label>
+                <input [(ngModel)]="booking.id" type="number" class="form-control" placeholder="ID" aria-label="ID">
+            </div>
+            <div class="col">
+                <!-- RoomNumber -->
+                <label class="form-label">Room Number</label>
+                <input [(ngModel)]="booking.roomnumber" type="number" class="form-control" placeholder="Room-Number" aria-label="Room-Number">
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col">
+                <!-- Name -->
+                <label class="form-label">Name</label>
+                <input [(ngModel)]="booking.name" type="text" class="form-control" placeholder="Name" aria-label="Name">
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col">
+                <!-- checkIn -->
+                <label class="form-label">Arrival</label>
+                <input [(ngModel)]="booking.checkIn" type="date" class="form-control" placeholder="Check in" aria-label="Check in">
+            </div>
+            <div class="col">
+                <!-- checkOut -->
+                <label class="form-label">Departure</label>
+                <input [(ngModel)]="booking.checkOut" type="date" class="form-control" placeholder="Check out" aria-label="Check out">
+            </div>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+        <button (click)="save()" class="btn btn-primary me-2">book it</button>
+        <button class="btn btn-primary me-2">abort</button>
+    </div>
+</div>
