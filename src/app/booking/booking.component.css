@@ -1,0 +1,7 @@
+.accordion-body-go{
+    cursor: pointer;
+}
+
+.accordion-body-go:hover{
+    background-color: rgba(0, 255, 255, 0.15);
+}

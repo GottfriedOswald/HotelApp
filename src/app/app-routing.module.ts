@@ -8,7 +8,10 @@ const routes: Routes = [
     path:'booking', component: BookingComponent
   },
   {
-    path:'createBooking', component: CreateBookingComponent
+    path:'create', component: CreateBookingComponent
+  },
+  {
+    path:'edit/:id', component: CreateBookingComponent
   },
   {
     // ist eine Umleitung auf 'bokking' wenn Pfad leer ist

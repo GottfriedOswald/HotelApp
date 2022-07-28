@@ -28,4 +28,8 @@ export class CreateBookingComponent implements OnInit {
     this.router.navigate(['booking']);
   }
 
+  abort():void{
+    this.router.navigate(['booking']);
+  }
+
 }
